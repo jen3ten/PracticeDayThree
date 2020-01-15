@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PracticeDayThree
 {
@@ -25,7 +26,23 @@ namespace PracticeDayThree
                 Console.WriteLine("This is a consonent");
             }
 
-            
+            // use a List to save the vowels
+            List<char> vowels = new List<char>();
+            vowels.Add('a');
+            vowels.Add('e');
+            vowels.Add('i');
+            vowels.Add('o');
+            vowels.Add('u');
+
+            if (vowels.Contains(myLetter))
+            {
+                Console.WriteLine("This is a vowel, which I figured out by comparing to a list of vowels.");
+            }
+            else
+            {
+                Console.WriteLine("This is a consonent, because its not a vowel.");
+            }
+
         }
     }
 }
