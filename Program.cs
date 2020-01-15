@@ -15,6 +15,17 @@ namespace PracticeDayThree
             char myLetter = Convert.ToChar(userInput);
             // char myLetter = Convert.ToChar(Console.ReadLine());
 
+            // if myLetter is a, e, i, o, u then say its a vowel
+            if(myLetter == 'a' || myLetter == 'e' || myLetter == 'i' || myLetter == 'o' || myLetter == 'u')
+            {
+                Console.WriteLine("This is a vowel");
+            }
+            else
+            {
+                Console.WriteLine("This is a consonent");
+            }
+
+            
         }
     }
 }
